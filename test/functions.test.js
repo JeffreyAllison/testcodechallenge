@@ -9,6 +9,7 @@ import {
     makeLuckyGreeting,
     getSecondItem,
     getLastItem,
+    getRandomNumber,
     //getRandomNumber,
 } from '../functions.js';
 
@@ -173,13 +174,13 @@ test('getLastItem', (expect) => {
     expect.equal(actual, expected, 'returns 10 as 10 is the last array item');
 });
 
-//test('getRandomNumber', (expect) => {
-//const expected = ();
+test('getRandomNumber', (expect) => {
+    const actual = getRandomNumber();
 
-//const actual = getRandomNumber();
+    const number1234Or5 = actual === 1 || actual === 2 || actual === 3 || actual === 4 || actual === 5;
 
-//expect.equal(actual, expected, '');
-//});
+    expect.equal(number1234Or5, true, 'returns a number randomly between 0 and 5');
+});
 
 
 skip('this test should be skipped', (expect) => {
