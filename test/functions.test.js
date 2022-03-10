@@ -8,7 +8,7 @@ import {
     returnAsAString,
     makeLuckyGreeting,
     getSecondItem,
-    //getLastItem,
+    getLastItem,
     //getRandomNumber,
 } from '../functions.js';
 
@@ -166,11 +166,11 @@ test('getSecondItem', (expect) => {
 });
 
 test('getLastItem', (expect) => {
-    const expected = ();
+    const expected = 'plum';
 
-    const actual = getLastItem();
+    const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
 
-    expect.equal(actual, expected, '');
+    expect.equal(actual, expected, 'returns 10 as 10 is the last array item');
 });
 
 //test('getRandomNumber', (expect) => {
