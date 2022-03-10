@@ -13,7 +13,7 @@ Output:
 */
 
 export function addExclamationPoints(p1, p2) {
-    return "p1" + "p2";
+    return p1 + p2;
 }
 
 // This function should take in a number and multiply it by seven
